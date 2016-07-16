@@ -1,6 +1,14 @@
-body{
+@font-face{
+    font-family: rob;
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
+
+html,body{
     margin: 0px;
     padding: 0px;
+    min-height: 100vh;
+    height: 100vh;
 }
 
 
@@ -12,9 +20,9 @@ body{
 
 .img-main{
     background-image: url("../images/android.jpg");
-    width: 100%;
+    
     height: 270px;
-    clear: left;
+    
 }
 
 .nav{
@@ -34,6 +42,7 @@ body{
     padding:  10px;
     color: #555555;
     font-weight: lighter;
+    font-family: rob;
 }
 
 .nav li:hover{
@@ -67,9 +76,114 @@ body{
 }
 
 .down-drop-content a:hover{
-    background: #33b5b5;
+    background: #33b5e5;
 }
 
 .down-drop:hover .down-drop-content{
     display: block;
 }
+
+.container{
+    overflow: auto;
+    clear: left;
+    display: block;
+    height: 90%;
+    min-height: 90%;
+}
+
+.container > div{
+    min-height: 200px;
+    padding: 20px;
+}
+
+.container > div:nth-child(even){
+    background: #efefef;
+}
+
+.table1, .table2{
+    width: 100%;
+    border-collapse: collapse;
+    /*border: 1px solid #777777;*/
+}
+
+.table1 td, .table1 th, .table2 th, .table2 td{
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background: #dddddd;
+}
+
+tr:nth-child(even){
+    background: #bbbbbb;
+}
+
+.table1 tr:first-child{
+    background: cornflowerblue;
+}
+
+.table1 th{
+    color: white;
+}
+
+.table2 tr{
+    border-bottom: 1px solid #333333;
+}
+
+.table2 tr:first-child{
+    background: mediumaquamarine;
+    color: white;
+    border: none;
+}
+
+.table2 td:first-child{
+    font-weight: bold;
+}
+
+/*form*/
+
+form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+}
+
+form input[type="submit"]{
+    width: auto;
+    padding: 7px;
+    background: #33b5e5;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.5s, box-shadow 0.5s;
+}
+
+form input[type="submit"]:hover{
+    background: dodgerblue;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="text"], form input[type="email"]{
+    border: 1px solid #777777;
+    border-radius: 10px;
+}
+
+form textarea,input[type="text"]:focus, form input[type="email"]:focus{
+    border: 1px solid seagreen;
+    border-radius: 10px;
+    outline: none;
+}
+
+form label{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+form textarea{
+    width: 100%; 
+    margin: 20px 0px 15px 0px;
+}
+
+
+
