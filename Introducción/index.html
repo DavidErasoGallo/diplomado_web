@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='keywords' content='ejemplo,html'>
+        <meta name='description' content='Primera pagina'>
+        <title></title>
+        <link rel='shortcut icon'  href='images/ubuntu.png'>
+       <link rel="stylesheet" href="styles/main.css">
+       <!--
+       <style>
+           h3{
+               color: blue;
+           }
+       </style>
+       -->
+    </head>
+    <body>
+       <div class="contenido2">Contenido 2</div>
+        <h1 style="color: red" class="contenido">Pagina Principal - Programación</h1>
+        <h2>Programación en HTML</h2>
+
+       <a href="#listas">Listas</a> - 
+       <a href="#tablas">Tablas</a> -
+        <a href="#multimedia">Multimedia</a></a>
+
+        <hr>
+        <p>La programación es una de las <q>ciencias</q> mas importantes de la ingenieria.</p>
+        
+        <p>Es importante desarollar la <b>logica</b> de programación desarollando <i>ejercicios </i> por ejemplo:</p>
+        <hr><h3>Ejercicio 1:</h3>
+        <pre class="contenido"> X<sup>2</sup> + Y<sub>3</sub>  =  Z</pre>
+
+        <ins>Prueba de ins</ins><br>
+        <del>Prueba de del</del><br>
+        <mark>Prueba de mark</mark><br>
+        <abbr title="Hipertext Markcup language">HTML</abbr><br>
+       <time datetime=YYYY-MM-DDTHH-MM-SS">Navidad</time><br>
+        <meter value="0">Cero Absoluto</meter><br>
+        <progress value="4" min="0" max="10"></progress><br>
+        <hr>
+       <a id="listas"></a>
+        <h3>Ejemplo Listas</h3>
+        <ol>
+          <li>Texto Uno</li>
+          <li>Texto Dos</li>
+          <li>Texto Tres</li>
+        </ol>
+
+        <ul>
+          <li>Texto Uno</li>
+          <li>Texto Dos</li>
+          <li>Texto Tres</li>
+         </ul>
+
+        <dl>  
+        <dt>Titulo 1
+            <dd>Descripcion 1</dd>
+        </dt>
+        <dt>Titulo 2
+            <dd>Descripcion 2</dd>
+        </dt>   
+        </dl>
+        <hr>
+        <a id="tablas"></a>
+        <h3>Ejemplo tabla</h3>
+        <table border="1">
+        <tr>
+            <th>Nombre</th><th>Cedula</th><th>Dirección</th>
+        </tr>
+        <tr>
+            <td>David</td><td>123</td><td>America</td>
+        </tr> 
+        <tr>
+            <td>Juan</td><td>456</td><td>Oceania</td>
+        </tr> 
+        </table>
+
+        <hr>
+        <h3>Ejemplo tabla 2</h3>
+
+       <table border="1"> 
+          <tr>
+              <td colspan="2" rowspan="2">Celda</td><td colspan="4">Celda</td><td>Celda</td>
+          </tr>
+         <tr>   
+            <td>Celda</td><td colspan="2">Celda</td><td colspan="2">Celda</td>
+         </tr>
+         <tr>   
+            <td rowspan="2">Celda</td><td rowspan="2">Celda</td><td>Celda</td><td colspan="2">Celda</td><td colspan="2">Celda</td>
+         </tr>
+         <tr>   
+            <td colspan="2">Celda</td><td colspan="3">Celda</td>
+         </tr>
+
+       </table>
+
+       <hr>
+        <h3>Ejemplo tabla 3</h3>
+     
+        <table border="1">
+        <caption>Datos Personales</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th><th>Cedula</th><th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>David</td><td>123</td><td>America</td>
+                </tr> 
+                <tr>
+                    <td>Juan</td><td>456</td><td>Oceania</td>
+                </tr> 
+            </tbody>
+            <tfoot>
+                <td>Total</td><td>2</td><td>3</td>
+            </tfoot>
+        </table>
+
+       <a id="multimedia"></a>
+        <hr>
+        <h3>Ejemplo Imagen</h3>
+
+        <img src="images/android.jpeg" alt="android" height="300"><br>
+
+        <hr>
+        <h3>Ejemplo audio</h3>
+
+        <audio controls>
+            <source src="http://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+            type="audio/mpeg">
+
+
+       </audio><br>
+
+        <video controls autoplay muted>
+            <source src="http://techslides.com/demos/sample-videos/small.mp4"
+            type="video/mp4">
+       </video><br>
+
+    </body>
+</html>

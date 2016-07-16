@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='keywords' content='ejemplo,html'>
+        <meta name='description' content='Primera pagina'>
+        <title><Prueba Formulario</title>
+        <link rel='shortcut icon'  href='images/ubuntu.png'>
+          <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+
+       <a href="pantalla2.html">Siguiente Pantalla</a>
+       <form>
+        <label for="nombre">Nombre: </label> 
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" maxlength="10"><br>
+        <label for="cel">Cedula: </label>
+        <input type="number" id="cel" name="cel" min="0" required formnovalidate><br>
+        <input type="radio" value="M" name="genero"> Masculino
+        <input type="radio" value="F" name="genero"> Femenino <br>
+        <label for="email">Email</label>
+        <input type="text" name="text" pattern="[a,b]{1,3}" title="solo a y b y min=1 y max=3" required><br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z](?=.*[A-Z]).{8,})"
+        title="La contraseña debe tener al menos un numero, letra minuscula, mayuscula y mayor a ocho" required><br>
+        <textarea name="des" id="des" cols="100" rows="10"></textarea><br>
+        
+        <select name="color">
+
+            <optgroup label="calidos">
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            </optgroup>
+            <optgroup label="Frios">
+            <option value="blue">Azul</option>
+            </optgroup>
+        </select><br>
+        <datalist id="diccionario">
+            <option value="Dario"/>
+            <option value="David"/>
+            <option value="Andres"/>
+            <option value="Juan"/>
+            <option value="Carlos"/>
+
+        </datalist>
+        <input list="diccionario"m placeholder="Nombre">
+        <br>
+        <input type="submit" > <input type="reset" >
+
+       </form>
+
+       <hr>
+       
+      <iframe src="pantalla2.html" frameborder="1"></iframe>
+    </body>
+</html>

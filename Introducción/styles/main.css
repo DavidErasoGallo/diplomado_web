@@ -1,0 +1,87 @@
+h3 {
+    /* #00fffff; */
+    /*rgb(0,255,0);*/
+    color: rgba(0, 255, 0,0.5);
+}
+/* para ids*/
+#cel{
+    color: #33b5e5;
+}
+/*referencia a clases*/
+.contenido{
+    background: #333333;
+    padding: 10px;
+     border: 3px solid blue;
+     margin: 20px 10px 10px 10px;
+}
+/*estilo para la etiqueta p y la clase contenido*/
+p, .contenido{
+    margin-left: 10px;
+}
+
+/*para toda clase importante en p*/
+p .importante{
+    font-size: 1em;
+    color: #ff4444;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 10px;
+}
+/*para toda clase white con contenido*/
+.contenido.white{
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;   
+}
+
+.contenido.blue{
+    color: #0000ff;
+}
+
+.contenido2{
+    margin: 10px;
+    background: green;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+}
+
+.contenedor{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #888888;
+}
+
+.contenedor div{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 10px;
+    color: white;
+
+}
+
+.img-parrafo{
+    float: left;
+}
+
+.boton{
+    background: teal;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: deepskyblue;
+}
+
+.boton:active{
+    background: green;
+}
