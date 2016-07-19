@@ -99,7 +99,7 @@ html,body{
 .container > div:nth-child(even){
     background: #efefef;
 }
-
+/*table*/
 .table1, .table2{
     width: 100%;
     border-collapse: collapse;

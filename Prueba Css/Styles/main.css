@@ -1,0 +1,73 @@
+ html,body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav li{
+    /*display: inline-block;*/
+    float: right;
+}
+
+.nav li a{
+    cursor: pointer;
+    display: block;
+    padding: 50px 30px 10px 10px;
+    color: white;
+    font-size: 12px;
+    
+}
+
+.nav li a:hover{
+    color: green;
+    
+}
+
+.nav .corvus{
+    /*background: #33b5e5;*/
+    color: white;
+    float: left;
+    
+}
+.nav .corvus a{
+	font-size: 18px;
+	font-family: arial;
+}
+
+.img-main{
+    background-image: url("../images/header.jpg");
+    height: 700px;
+}
+
+.h1{
+	color: white;
+	padding: 300px 0px 0px 50px; 
+    font-size: 50px;
+}
+
+.h3{
+	color: white;
+	padding-left: 50px;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+
+.learn-more{
+	margin-left: 50px;
+	background: transparent;
+	color: white;
+	font-size: 17px;
+    padding: 10px;
+    
+}
+
+.learn-more:hover{
+	background: green;
+	border: 0px solid green;
+	cursor: pointer;
+}

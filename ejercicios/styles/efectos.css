@@ -1,0 +1,97 @@
+@keyframes colores{
+
+    0%{
+        color: red;
+    }
+
+    25%{
+        color: yellow;
+    }
+
+    50%{
+        color: green;
+    }
+
+    75%{
+        color: blue;
+    }
+}
+
+@keyframes nombre{
+    0%{
+         transform: rotate(0deg);   
+    }
+
+    20%{
+        transform: rotate(360deg);
+    }
+    
+    40%{
+        transform: translateX(200px) rotate(360deg);
+    }
+
+    60%{
+        transform: translateX(200px) rotate(0deg);
+    }
+    
+    80%{
+        transform: translateX(0px);
+    }
+    
+
+}
+
+.card{
+    width: 350px;
+    /*height: 700px;*/
+    border: 1px solid #999999;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px rgba(0, 0,0,0.3);
+    transition: transform 1s, box-shadow 1s;
+}
+
+.card .header{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+
+    font-size: 1.7em;
+    color: white;
+    font-style:  italic;
+    font-weight: lighter;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.card .header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.card .content{
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    animation-name: colores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.card:hover{
+    /*transform: translateX(100px);*/
+    /*transform: scale(1.5,1.5);*/
+    transform: rotate(30deg);
+   /*transform: skew(10deg,10deg);*/
+    box-shadow: 3px 3px 7px rgba(0, 0,0,0.3);
+}
+
+.name{
+    display: inline-block;
+    animation-name: nombre;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
