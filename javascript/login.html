@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='keywords' content='ejemplo,html'>
+    <meta name='description' content='Primera pagina'>
+    <title>Login</title>
+    <script src="js/login.js"></script>
+</head>
+
+<body onload="initTime()"> 
+    <label for="usuario">Usuario</label>
+    <input type="text" id="usuario"><br>
+    <label for="pass">Contraseña</label>
+    <input type="password" id="pass"><br>
+    <button onclick="validar()">Entrar</button>
+    <div id="mensaje"></div>
+    <hr>
+    <button onclick="start()">Iniciar</button>
+    <button onclick="pause()">Pausar</button>
+    <button onclick="stop()">Detener</button>
+    <div id="hora">00:00</div>
+    <hr>
+    <div id="tiempo">00:00</div>
+</body>
+
+</html>
