@@ -27,7 +27,7 @@ function operar(operacion){
 }
 
 function resultado() {
-        var a = Number(num1);
+        var a = Number(num1); //parseInt(num1);
         var b = Number(num2);
         res = 0;
         if(op==4 && b==0){
