@@ -3,10 +3,10 @@ ul{
 }
 
 ul li{
-    min-height: 200px;
+    min-height: 20px;
     padding: 10px;
     text-align: center;
-    background: deepskyblue;
+    background: royalblue;
     color: white;
     cursor: pointer;
     margin-bottom: 10px;
