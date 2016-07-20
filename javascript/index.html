@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='keywords' content='ejemplo,html'>
+    <meta name='description' content='Primera pagina'>
+    <title>ejemplo javascript</title>
+    <link rel="stylesheet" href="styles/calculadora.css">
+   <script src="js/calculadora.js"></script>
+    <script>
+          /* var resultado = 0;
+           var o1 = 5;
+           var o2 = 2;
+
+           if(o2==0){
+            //alert("El resultado de: "+ o1+ " / " +o2+ " es: Infinito");
+           }
+           else{
+            resultado = o1 / o2;
+            console.log("El resultado es " + resultado);
+            //alert("El resultado de: "+ o1+ " / " +o2+ " es: "+ resultado);
+           }*/
+       </script>
+</head>
+
+<body>
+
+    <form>
+        <input type="number" id="campo" value="0">
+
+        <div class="row">
+            <input type="button" id="uno" value="1" onclick="concatenar(1)"> 
+            <input type="button"  id="dos" value="2" onclick="concatenar(2)">
+            <input type="button" id="tres" value="3" onclick="concatenar(3)">
+            <input type="button" value="+" onclick="operar(1)">
+        </div>
+
+        <div class="row">
+            <input type="button" id="cuatro" value="4" onclick="concatenar(4)">
+            <input type="button" id="cinco" value="5" onclick="concatenar(5)"> 
+            <input type="button" id="seis" value="6" onclick="concatenar(6)">
+            <input type="button" value="-" onclick="operar(2)">
+        </div>
+
+        <div class="row">
+            <input type="button" id="siete" value="7" onclick="concatenar(7)">
+            <input type="button" id="ocho" value="8" onclick="concatenar(8)">
+            <input type="button" id="nueve" value="9" onclick="concatenar(9)">
+            <input type="button" value="*" onclick="operar(3)">
+        </div>
+
+        <div class="row">
+            <input type="button" id="cero" value="0" onclick="concatenar(0)">
+            <input type="reset" value="C" onclick="reiniciar()">
+            <input type="button" value="=" onclick="resultado()">
+            <input type="button" value="/" onclick="operar(4)">
+        </div>
+    </form>
+</body>
+
+</html>

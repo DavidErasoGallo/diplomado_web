@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body, form{
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.row input{
+    flex: 1;
+    background: #dddddd;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+    font-size: 2em;
+    margin: 2px;
+}
+
+.row input:last-child{
+    background: cadetblue;
+    color: white;
+}
+
+input[type="number"]{
+    background: #333333;
+    width: 100%;
+    padding: 12px;
+    font-size: 2em;
+    color: white;
+}
+
+.row input:hover{
+    background: #eeeeee;
+}
+
+.row input:last-child:hover{
+    background: cornflowerblue;
+}
+
+.row:last-child + input{
+    background: lightseagreen;
+}
