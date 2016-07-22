@@ -1,13 +1,14 @@
 {
-  "name": "ajax",
+  "name": "clima",
   "version": "1.0.0",
-  "description": "Proyecto de ejmplo ajax",
+  "description": "Proyecto de ejemplo ajax",
   "scripts": {
     "start": "lite-server"
   },
   "author": "David Eraso",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.1.0",
     "lite-server": "^2.2.2"
   }
 }

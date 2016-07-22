@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='keywords' content='ejemplo,html'>
+    <meta name='description' content='Primera pagina'>
+    <title>Clima con Jquery</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="text/javascript" src="js/clima.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>Clima Colombia</header>
+        <div class="container">
+            <aside>
+                <ul>
+                    <li id="op1" onclick="loadWeather('op1','pasto')">Pasto</li>
+                    <li id="op2" onclick="loadWeather('op2','popayan')">Popayan</li>
+                    <li id="op3" onclick="loadWeather('op3','cali')">Cali</li>
+                    <li id="op4" onclick="loadWeather('op4','medellin')">Medellin</li>
+                    <li id="op5" onclick="loadWeather('op5','bogota')">Bogota</li>
+                </ul>
+            </aside>
+            <section>
+                <h1 id="city"></h1>
+                <h3 id="description"></h3>
+                <table>
+                    <tr>
+                        <td>Temperatura</td>
+                        <td id="temp"></td>
+                    </tr>
+                    <tr>
+                        <td>Humedad</td>
+                        <td id="hum"></td>
+                    </tr>
+                    <tr>
+                        <td>Presión</td>
+                        <td id="pres"></td>
+                    </tr>
+                </table>
+
+            </section>
+
+        </div>
+    </main>
+</body>
+
+</html>

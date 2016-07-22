@@ -1,0 +1,12 @@
+[
+    {
+        "nombre": "David",
+        "celular": "3321490202",
+        "correo": "prueba@qwert.com"
+    },
+    {
+        "nombre": "Luis",
+        "celular": "333434324",
+        "correo": "test@qwert.com"
+    }
+]

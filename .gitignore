@@ -1,2 +1,4 @@
 *.log
 ajax/node_modules/
+clima-jquery/node_modules/
+.DS_Store
