@@ -73,7 +73,12 @@ section{
 section h1{
     font-size: 3em;
     margin-bottom: 15px;
+    text-transform: capitalize;
 }
+
+/*section h1::first-letter{
+    text-transform: uppercase;
+}*/
 
 section h3{
     font-size: 1.7em;
