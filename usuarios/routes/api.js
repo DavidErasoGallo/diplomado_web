@@ -24,9 +24,9 @@ router.post("/:collection", function (req, res, next) {
 });
 
 //eliminar recurso
-router.delete("/:collection:id", function (req, res, next) {
+router.delete("/:collection/:id", function (req, res, next) {
     var id = new mId(req.params.id);
-    req.c.delete({ _id: id }, function (err, result) {
+    req.c.deleteOne({ _id: id }, function (err, result) {
         if (err) {
             res.send({ success: false });
         } else {
@@ -55,6 +55,19 @@ router.get("/:collection/:id", function (req, res, next) {
 
         } else {
             res.send(result);
+        }
+    });
+});
+
+//actualizar un usuario
+router.put("/:collection/:id",function (req,res,next){
+    var id = new mId(req.params.id);
+    var obj = req.body;
+    req.c.update({_id:id}, {$set:obj},function (err, result){
+         if (err) {
+            res.send({ success: false });
+        } else {
+            res.send({ success: true });
         }
     });
 });

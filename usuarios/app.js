@@ -10,6 +10,7 @@ var mongo = require('mongodb').MongoClient;
 //var users = require('./routes/users');
 
 var usuarios = require("./routes/usuarios");
+var api = require("./routes/api");
 
 var app = express();
 
@@ -45,6 +46,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/users', users);
 
 app.use("/usuarios", usuarios);
+app.use("/api",api);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
