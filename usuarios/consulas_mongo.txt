@@ -1,0 +1,82 @@
+//crear usuarios o iniciar base de datos
+
+use usuarios
+
+//insertar usuarios
+
+db.usr.insert({ nombre: "David", cedula: "123", edad: 21 })
+
+db.usr.insert({ nombre: "dario", cedula: "456", edad: 30, celulares: ["300", "301"] })
+
+db.usr.insert({ nombre: "sandra", cedula: "789", celulares: ["316", "320"] })
+
+//consultar todos los usuarios
+
+db.usr.find().toArray()
+
+//eliminar el usuario cuyo nombre es dario
+
+db.usr.deleteOne({ nombre: "dario" })
+
+//actualizar la cédula y el nombre del usuario “sandra”
+
+db.usr.update({ nombre: "sandra" }, { $set: { cedula: "098", nombre: "juanita" } })
+
+//buscar usuarios que tengan nombre varios o cédula 123
+
+db.usr.find({ $or: [{ cedula: "123" }, { nombre: "dario" }] }).toArray()
+
+//buscar los usuarios con edad mayor a 21
+
+db.usr.find({ edad: { $gte: 21 } }).toArray()
+
+//obtener el nombre de la anterior consulta
+
+db.usr.find({ edad: { $gte: 21 } }, { nombre: 1 }).toArray()
+
+//obtener cédula y nombre de la anterior consulta
+
+db.usr.find({ edad: { $gte: 21 } }, { nombre: 1, cedula: 1 }).toArray()
+
+//no obtener el nombre de la anterior consulta
+
+db.usr.find({ edad: { $gte: 21 } }, { nombre: 0 }).toArray()
+
+//obtener nombre, cédula pero no el id
+
+db.usr.find({ edad: { $gte: 21 } }, { nombre: 1, cedula: 1, _id: 0 }).toArray()
+
+//mostrar las cédulas que contenga 2
+
+db.usr.find({ cedula: { $regex: ".2" } })
+
+//obtener el nombre de las colecciones
+
+db.getCollectionNames()
+
+//buscar usuarios sin importan mayusculas
+
+db.usr.find({ nombre: { $regex: "^da", $options: "i" } })
+
+//agregar mascotas al usuario david
+
+db.usr.update({ nombre: "David" }, { $set: { mascota: { nombre: "firulais", color: "amarillo", edad: 2 } } })
+
+//buscar la mascota de edad 2
+
+db.usr.find({ "mascota.edad": 2 })
+
+//retornar solo los datos de mascota
+
+db.usr.find({ "mascota.edad": 2 }, { mascota: 1 }).toArray()
+
+//saber si un usuario no tiene mascota
+
+db.usr.find({mascota: {$exists:false}})
+
+//retornar el primer celular de dario
+db.usr.find({nombre:"dario"},{celulares:{$slice:1}})
+
+//retornar el ultimo celular de dario
+
+db.usr.find({nombre:"dario"},{celulares:{$slice:-1}}).toArray()
