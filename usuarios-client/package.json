@@ -1,0 +1,14 @@
+{
+  "name": "usuarios-client",
+  "version": "1.0.0",
+  "description": "cliente de aplicacion de usuarios",
+  "scripts": {},
+  "author": "David Eraso",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.6",
+    "jquery": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "webpack": "^1.13.1"
+  }
+}
