@@ -6,11 +6,12 @@ module.exports = {
     entry: "./src/app",
     output:{
         filename: "build.js",
-        path: "build"
+        path: "./build"
     },
     module:{
         loaders:[
-            {test:/\.css$/,loader:extractWebpackPlugin.extract("style-loader","css-loader")}
+            {test:/\.css$/,loader:extractWebpackPlugin.extract("style-loader","css-loader")},
+            {test:/\.(ttf|woff|woff2|eot)$/,loader:'file?name=fonts/roboto/[name].[ext]'}
         ]
     },
     plugins:[
