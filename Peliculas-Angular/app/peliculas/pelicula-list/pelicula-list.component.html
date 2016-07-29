@@ -1,0 +1,14 @@
+<div *ngIf="data">
+    <div *ngFor="let p of data; let i = index">
+     <!--   <h1>{{p.nombre}}</h1>
+        <h4>{{p.genero}}</h4>
+        <p>{{p.sinopsis}}</p>-->
+       <pe-peli [peli]="p" [index]="i" (del)="deletePelicula($event)"></pe-peli>
+    </div>
+</div>
+
+<div *ngIf="!data">
+    No se han cargado las peliculas
+</div>
+
+<button (click)="loadData()">Cargar</button>
