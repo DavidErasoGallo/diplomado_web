@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "MovieFont";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "MovieFont";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.movie-icons {
+  font-family: MovieFont;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+/*[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Movie;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.flaticon-batman:before { content: "\f100"; }
+.flaticon-bomb:before { content: "\f101"; }
+.flaticon-castle:before { content: "\f102"; }
+.flaticon-good-mood-emoticon:before { content: "\f103"; }
+.flaticon-halloween-ghost:before { content: "\f104"; }
+.flaticon-heart:before { content: "\f105"; }
+.flaticon-theatre:before { content: "\f106"; }
+.flaticon-trophy:before { content: "\f107"; }*/

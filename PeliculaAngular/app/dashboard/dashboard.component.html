@@ -1,0 +1,41 @@
+<div class="complete-screen row">
+
+    <div class="col m4 l2 grey darken-4 complete-screen nm z-depth-2 hide-on-small-only">
+        <ul class="collection nm with-header nav-less">
+            <li class="collection-header grey darken-4">
+                <h5>Genero</h5>
+            </li>
+            <a class="collection-item" routerLink="genre/53" routerLinkActive="selected" (click)="loadGenre(53)"><i class="movie-icons">&#xf107;</i><span>Populares</span></a>
+            <a class="collection-item" routerLink="genre/28" routerLinkActive="selected" (click)="loadGenre(28)"><i class="movie-icons">&#xf103;</i><span>Accion</span></a>
+            <a class="collection-item" routerLink="genre/35" routerLinkActive="selected" (click)="loadGenre(35)"><i class="movie-icons">&#xf106;</i><span>Comedia</span></a>
+            <a class="collection-item" routerLink="genre/18" routerLinkActive="selected" (click)="loadGenre(18)"><i class="movie-icons">&#xf105;</i><span>Drama</span></a>
+            <a class="collection-item" routerLink="genre/10749" routerLinkActive="selected" (click)="loadGenre(10749)"><i class="movie-icons">&#xf104;</i><span>Romance</span></a>
+            <a class="collection-item" routerLink="genre/27" routerLinkActive="selected" (click)="loadGenre(27)"><i class="movie-icons">&#xf100;</i><span>Superheroes</span></a>
+            <a class="collection-item" routerLink="genre/14" routerLinkActive="selected" (click)="loadGenre(14)"><i class="movie-icons">&#xf102;</i><span>Fantasia</span></a>
+        </ul>
+        <ul class="collection nm with-header grey darken-4 grey-text text-lighten-3 nav-less">
+            <li class="collection-header grey darken-4 ">
+                <h5>Perfil</h5>
+            </li>
+            <a class="collection-item" (click)="selectProfile(0)"><i class="material-icons">favorite</i><span>Mis peliculas</span></a>
+            <a class="collection-item" (click)="selectProfile(1)"><i class="material-icons">power_settings_new</i><span>Cerrar Sesion</span></a>
+        </ul>
+    </div>
+    <div class="col s12 m8 l10 nm">
+        <nav class="white">
+            <div class="nav-wrapper container">
+                <a data-activates="mobile-nav" class="clickable button-collapse hide-on-med-and-up"><i class="material-icons grey-text text-darken-3">menu</i></a>
+                <span class="brand-logo red-text thin">Estrenos</span>
+            </div>
+        </nav>
+
+        <div class="dash-content">
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+
+
+
+
+</div>

@@ -1,0 +1,66 @@
+<div class="row valign-wrapper complete-screen center-crop" style="background-image:url('../../assets/images/bg2.jpg')">
+    <div class="col s12 m6 l4 offset-m3 offset-l4">
+        <div class="card transparent-panel">
+            <div class="card-content white-text">
+                <h3 class="thin"><i class="material-icons medium vertical-center">local_movies</i> Estrenos</h3>
+                <div *ngIf="!reg">
+                    <span class="card-title"> Iniciar Sesion</span>
+                    <form>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">perm_identity</i>
+                                <input type="text" class="validate">
+                                <label for="usr">Usuario</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock_outline</i>
+                                <input type="password" class="validate">
+                                <label for="pass">Contraseña</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <a  class="horizontal-text-center waves-effect waves-light btn-flat  orange-text col s6" (click)="switchToRegister()" >Registrate</a>
+                            <button class="btn waves-effect waves-light  orange col s6" type="submit" (click)="login()">Entrar</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div *ngIf="reg">
+                    <span class="card-title">Registrate</span>
+                    <form>
+                        <div class="input-field">
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="ced" type="number" class="validate">
+                            <label for="ced">Cedula</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="usr" type="text" class="validate">
+                            <label for="usr">Usuario</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="pass" type="text" class="validate">
+                            <label for="pass">Contraseña</label>
+                        </div>
+                        <div class="row">
+                            <input name="genero" type="radio" id="m" value="M" checked/>
+                            <label class="white-text" for="m">Hombre</label>
+                            <input name="genero" type="radio" id="f" value="F" />
+                            <label class="white-text" for="f">Mujer</label>
+                        </div>
+                        <div class="row">
+                            <a  class="horizontal-text-center waves-effect waves-light btn-flat orange-text col s6" (click)="switchToLogin()" >Cancelar</a>
+                            <button class="btn waves-effect waves-light orange col s6" type="submit" >Listo</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

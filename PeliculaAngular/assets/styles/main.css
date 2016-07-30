@@ -1,0 +1,122 @@
+html,body{
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.center-crop{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+.complete-screen{
+    min-height: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.transparent-panel{
+  background: rgba(0,0,0,0.6);
+}
+
+.vertical-center{
+    vertical-align: middle;
+}
+
+.horizontal-text-center{
+    text-align: center;
+}
+
+.col.nm{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+/*Menu lateral*/
+
+.collection.nm{
+  margin: 0px;
+}
+.collection.nav-less{
+  border:none;
+}
+
+.collection.nav-less a,.collection.nav-less li {
+  border-bottom: 1px solid #2b2b2b;
+  background: #212121;
+  color: #eeeeee;
+}
+
+.collection.nav-less a{
+  cursor: pointer;
+}
+.collection.nav-less li{
+  cursor: default;
+}
+.collection.nav-less i,.collection.nav-less span{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+
+}
+
+.collection.nav-less li.collection-header{
+  border-bottom: none
+}
+
+.collection.nav-less a.collection-item:hover {
+  background-color: #444;
+}
+
+.collection.nav-less a.collection-item.selected {
+  background-color: #ff1212;
+}
+
+.collection.nav-less a.collection-item.selected:hover {
+  background-color: #ff4444;
+}
+
+
+.dash-content {
+  margin: 0 auto;
+  margin-top: 2vh;
+  width: 94%;
+  overflow: auto;
+}
+
+@media only screen and (min-width: 601px) {
+  .dash-content {
+    margin-top: 5vh;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .dash-content {
+    margin-top: 4vh;
+    width: 92%;
+  }
+}
+
+
+.news-image{
+    height: 200px;
+}
+
+
+/*TEst*/
+
+.test1{
+    background: red;
+}
+
+.test2{
+    background: green;
+}
