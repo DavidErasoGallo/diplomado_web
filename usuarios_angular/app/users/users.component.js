@@ -10,15 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
+var users_service_1 = require("./users.service");
+var birthday_pipe_1 = require("./shared/birthday.pipe");
 var UserComponent = (function () {
-    function UserComponent() {
+    function UserComponent(service) {
+        this.service = service;
+        this.data = service.getUsers();
     }
     UserComponent = __decorate([
         core_1.Component({
             templateUrl: "./app/users/users.component.html",
-            pipes: [common_1.CurrencyPipe, common_1.DecimalPipe]
+            providers: [users_service_1.UserService],
+            pipes: [common_1.CurrencyPipe, common_1.DecimalPipe, birthday_pipe_1.BirthDayPipe]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [users_service_1.UserService])
     ], UserComponent);
     return UserComponent;
 }());
