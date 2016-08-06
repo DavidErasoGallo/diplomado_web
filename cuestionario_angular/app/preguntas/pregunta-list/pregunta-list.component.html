@@ -1,0 +1,57 @@
+<div class="fondo">
+
+    <h1 class="h text-center">Test de Razonamiento</h1>
+    <form>
+
+        <div class="row">
+            <div *ngIf="data">
+                <div *ngFor="let p of data; let i = index">
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail transparent-panel ma">
+                            <div class="caption">
+
+                                <h3 class="h text-center">{{p.nombre}}</h3>
+
+                                <img src={{p.imagen}} class="img-responsive" alt="Responsive image"><br>
+                                <label class="h">A</label>
+                                <input type='radio' [name]="i" value='a' required (click)="getValue(i,'a')">
+                                <label class="h">B</label>
+                                <input type='radio' [id]="i" [name]="i" value='b' required (click)="getValue(i,'b')">
+                                <label class="h">C</label>
+                                <input type='radio' [name]="i" value='c' required (click)="getValue(i,'c')">
+                                <label class="h">D</label>
+                                <input type='radio' [name]="i" value='d' required (click)="getValue(i,'d')">
+                                <h4 class="h">{{p.descripcion}}</h4>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div *ngIf="!data">
+            No se han cargado las preguntas
+        </div>
+        <div class="row">
+            <input type="submit" class="btn btn-info bu" value="Calificar" (click)="calificar()">
+        </div>
+    </form>
+
+    <div id="res" class="row">
+        <div class="col-sm-5 col-md-5 ma">
+            <div class="alert alert-success" role="alert">
+                <strong>0 </strong> Pregunta(s) Correctas
+            </div>
+        </div>
+        <div class="col-sm-5 col-md-5 ma">
+            <div class="alert alert-danger" role="alert">
+                <strong>0 </strong> Pregunta(s) Incorrectas
+            </div>
+        </div>
+    </div>
+</div>

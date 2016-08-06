@@ -1,0 +1,44 @@
+
+html,body{
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+form input[type="radio"]{
+    margin-right: 40px; 
+}
+
+.fondo{
+    background-image: url('../../assets/images/cerebro.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.transparent-panel{
+  background: rgba(0,0,0,0.6);
+}
+
+.fondo_tar {
+  background-color: lawngreen;
+}
+
+.h{
+    color: white;
+}
+
+.ma{
+    margin: 50px;
+}
+
+h1{
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.bu{
+    width: 50%;
+    margin-left: 25%;
+}
